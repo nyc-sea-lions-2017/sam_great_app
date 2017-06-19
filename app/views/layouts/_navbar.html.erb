@@ -1,4 +1,4 @@
-<div class="collapse" id="exCollapseingNavbar">
+<div class="collapse" id="exCollapsingNavbar">
   <div class="collapse-bg p-a-1">
     <div class='card'>
         <ul class="list-group list-group-flush">
@@ -9,11 +9,11 @@
             <li class="list-group-item">
               <%= link_to 'My Posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
             <li>
-            <li class="nav-item">
+            <li class="list-group-item">
             <%= link_to 'Logout', destroy_author_session_path, class: "nav-link", method: :delete %>
           </li>
           <% else %>
-            <li class="nav-item">
+            <li class="list-group-item">
             <%= link_to 'Login', new_author_session_path, class: "nav-link" %>
             </li>
           <% end %>
@@ -28,9 +28,9 @@
   </div>
 </div>
 
-<nav class="navbar navbar-light bg-faded navbar-toggleable-sm ">
+<nav class="navbar navbar-light bg-faded">
   <div class="container">
-    <a class="navbar-brand" href="/">Fogblog</a>
+    <a class="navbar-brand" href="/">Fog<span class="light">blog</span></a>
     <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapseingNavbar" >&#9776;</button>
       <ul class="nav navbar-nav ml-auto pull-sm-right hidden-xs-down">
         <li class="list-item">
