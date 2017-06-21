@@ -45,6 +45,44 @@
 }
 }
 
+
+
+@keyframes spin-cw-360deg {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); }
+}
+
+.card {
+  animation-name: spin-cw-360deg;
+  animation-duration: 3s;
+}
+
+
+
+
+.transitions {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  margin: 20px 0 60px;
+}
+
+#boom {
+  display: none;
+  width: 60%;
+  max-width: 960px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
 @media screen and (min-width: 34em) {
   .posts.index .card {
     height: 440px;
